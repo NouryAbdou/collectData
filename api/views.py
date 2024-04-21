@@ -12,6 +12,7 @@ import joblib
 @csrf_exempt
 def train_linear_regression(request):
     if request.method == 'POST':
+
         # Charger les données du corps de la requête POST
         data = json.loads(request.body)
 
